@@ -1,90 +1,113 @@
 # 🤖 Telegram AI Order Bot
 
-An intelligent Telegram chatbot built with **Python** that helps users browse a product catalog, understand natural language requests using **Google Gemini AI**, and submit orders through Telegram.
+An intelligent Telegram chatbot built with **Python** and **Google Gemini AI** that helps users browse products, understand natural language requests, and submit orders directly through Telegram.
 
-This project demonstrates AI integration, API development, clean software architecture, and conversational user interaction.
+This project demonstrates AI integration, Telegram bot development, clean software architecture, and conversational user experiences.
 
 ---
 
 ## 🚀 Features
 
-- 💬 Natural language conversations
-- 🤖 Google Gemini AI integration
-- 🎤 Voice message support
-- 📦 Product catalog search
-- 🛒 Interactive order creation
-- ✅ Order confirmation workflow
-- 👤 Customer information collection
-- 📩 Automatic order forwarding via Telegram
-- ⚙️ Environment-based configuration
-- 🧩 Modular Python architecture
+* 💬 Natural language conversations
+* 🤖 Google Gemini AI integration
+* 🎤 Voice message support
+* 📦 Product catalog search
+* 🛒 Interactive order creation
+* ✅ Order confirmation workflow
+* 👤 Customer information collection
+* 📩 Automatic order forwarding via Telegram
+* ⚙️ Environment-based configuration
+* 🧩 Modular Python architecture
+
+---
+
+## 📸 Screenshots
+
+### Menu Screen
+
+![Welcome Screen](https://github.com/mohamadomarsidani123/Telegram_AI_BOT-repo/blob/4a56c55d633913f4fc09f0e16a79146ca536bf40/WhatsApp%20Image%202026-06-23%20at%204.31.38%20AM.jpeg)
+
+### Product Search
+
+![Product Search](https://github.com/mohamadomarsidani123/Telegram_AI_BOT-repo/blob/858e40eb265a562599ee9f0b0b06914576707970/WhatsApp%20Image%202026-06-23%20at%204.39.13%20AM.jpeg)
+
+### AI Response
+
+![AI Response](https://github.com/mohamadomarsidani123/Telegram_AI_BOT-repo/blob/da8fe0ed1558df2b5c0be9da1f3679d9d2778297/WhatsApp%20Image%202026-06-22%20at%2011.19.30%20PM.jpeg)
+
+### Order Confirmation
+
+![Order Confirmation](https://github.com/mohamadomarsidani123/Telegram_AI_BOT-repo/blob/3ec70541a30e7e2bd56c88ae9cb6775c1c6758b6/WhatsApp%20Image%202026-06-22%20at%2011.19.29%20PM.jpeg)
+
+### Remove Product
+
+![Remove Product](https://github.com/mohamadomarsidani123/Telegram_AI_BOT-repo/blob/da8fe0ed1558df2b5c0be9da1f3679d9d2778297/WhatsApp%20Image%202026-06-22%20at%2011.19.32%20PM.jpeg)
+
+
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Python 3.11+
-- python-telegram-bot
-- Google Gemini API
-- JSON
-- Pydantic
-- Poetry
-- Git
-- GitHub
+* Python 3.11+
+* python-telegram-bot
+* Google Gemini API
+* Pydantic
+* JSON
+* Poetry
+* Git
+* GitHub
 
 ---
 
 ## 📂 Project Structure
 
-```
+```text
 .
 ├── src/
 │   └── tgbot/
-│       ├── handlers/
-│       ├── services/
-│       ├── models/
-│       ├── utils/
-│       └── main.py
-├── tests/
-├── pyproject.toml
-├── .env.example
+│       ├── main.py
+│       ├── config.py
+│       ├── catalog.py
+│       ├── orders.py
+│       ├── schemas.py
+│       ├── gemini_client.py
+│       ├── gemini_check.py
+│       ├── telegram_check.py
+│       └── screenshots/
 ├── README.md
-└── CODEBASE_DOCUMENTATION.md
+├── pyproject.toml
+└── .env.example
 ```
 
 ---
 
 ## ⚡ Installation
 
-### Clone the repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/mohamadomarsidani123/Telegram_AI_BOT-repo.git
-```
-
-Enter the project
-
-```bash
 cd Telegram_AI_BOT-repo
 ```
 
-Create a virtual environment
+### Create a Virtual Environment
 
-### Windows
+#### Windows
 
 ```bash
 python -m venv .venv
 .venv\Scripts\activate
 ```
 
-### Linux / macOS
+#### Linux / macOS
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-Install dependencies
+### Install Dependencies
 
 ```bash
 pip install -e .
@@ -94,9 +117,7 @@ pip install -e .
 
 ## 🔑 Environment Variables
 
-Create a `.env` file using the provided template.
-
-Example:
+Create a `.env` file:
 
 ```env
 BOT_TOKEN=your_telegram_bot_token
@@ -110,6 +131,12 @@ ADMIN_CHAT_ID=your_chat_id
 
 ```bash
 python -m src.tgbot.main
+```
+
+or
+
+```bash
+tgbot
 ```
 
 ---
@@ -128,34 +155,34 @@ python -m src.tgbot.main
 
 ## 📚 Skills Demonstrated
 
-- Python Development
-- Object-Oriented Programming
-- REST API Integration
-- AI Integration (Google Gemini)
-- Telegram Bot Development
-- JSON Data Processing
-- Environment Configuration
-- Git & GitHub
-- Clean Project Architecture
+* Python Development
+* Object-Oriented Programming
+* AI Integration (Google Gemini)
+* Telegram Bot Development
+* JSON Data Processing
+* Environment Configuration
+* Software Architecture
+* Git & GitHub
+* API Integration
 
 ---
 
 ## 🔒 Security
 
-Sensitive information such as API keys and bot tokens are stored in environment variables and are **never committed** to the repository.
+Sensitive information such as API keys, chat IDs, and bot tokens are stored in environment variables and are **never committed** to the repository.
 
 ---
 
 ## 🧪 Future Improvements
 
-- Docker support
-- PostgreSQL database
-- User authentication
-- Order history
-- Admin dashboard
-- Payment integration
-- Multi-language support
-- Deployment on AWS or Azure
+* Docker support
+* PostgreSQL integration
+* Order history
+* Admin dashboard
+* Payment processing
+* Multi-language support
+* Cloud deployment (AWS / Azure)
+* User accounts and authentication
 
 ---
 
@@ -163,17 +190,18 @@ Sensitive information such as API keys and bot tokens are stored in environment 
 
 **Mohamad Omar Sidani**
 
-Fresh Graduate Software Engineer
+Software Engineer
 
-GitHub:
-https://github.com/mohamadomarsidani123
+GitHub: https://github.com/mohamadomarsidani123
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a star on GitHub.
 
 ---
 
 ## 📄 License
 
 This project is licensed under the MIT License.
-
----
-
-⭐ If you found this project useful, consider giving it a star!
